@@ -1,7 +1,7 @@
 {
   "name": "discord-music-bot",
   "version": "1.0.0",
-  "description": "Discord music bot for Render",
+  "description": "Discord music bot with play-dl",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -9,10 +9,8 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "@discordjs/voice": "^0.16.1",
-    "ytdl-core": "^4.11.5",
-    "yt-search": "^2.10.4",
+    "play-dl": "^1.9.7",
     "ffmpeg-static": "^5.2.0",
-    "sodium": "^3.0.2",
     "dotenv": "^16.3.1"
   },
   "engines": {
