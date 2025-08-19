@@ -172,7 +172,7 @@ async function handlePlayCommand(interaction) {
             title: videoData.title || 'Unknown Title',
             url: videoData.url,
             duration: formatDuration(videoData.durationInSec || 0),
-            thumbnail: videoData.thumbnails?.?.url || null,
+            thumbnail: videoData.thumbnails?.[0]?.url || null,
             requester: interaction.user,
             videoData: videoData
         };
@@ -536,3 +536,4 @@ client.login(process.env.DISCORD_TOKEN)
         console.error('❌ Login failed:', error);
         process.exit(1);
     });
+
